@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.misk.amna.myquiz.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Answer These Question"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/Q1t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="34dp"
+            android:layout_below="@+id/H"
+            android:layout_alignStart="@+id/textView9" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1t"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:id="@+id/Q1Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Q1N"
+                android:layout_alignBottom="@+id/Q1N"
+                android:layout_alignStart="@+id/editText"
+                android:text="RadioButton"
+                tools:layout_editor_absoluteX="220dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <RadioButton
+                android:id="@+id/Q1N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:text="RadioButton"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="111dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/Q1t"
+            android:layout_below="@+id/radioGroup1"
+            android:text="Question2"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q2"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:id="@+id/Q2Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Q2N"
+                android:layout_alignBottom="@+id/Q2N"
+                android:layout_alignStart="@+id/editText"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/Q2N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:text="RadioButton" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_centerHorizontal="true"
+            android:text="Question3"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q3"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:id="@+id/Q3Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/Q2N"
+                android:text="RadioButton" />
+
+
+            <RadioButton
+                android:id="@+id/Q3N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Q2Y"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/radioGroup3"
+            android:text="Question4"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_below="@+id/textView9"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/editText"
+            android:text="Question5"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="366dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignStart="@+id/editText3"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="314dp"
+            android:layout_below="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText3"
+            android:layout_centerHorizontal="true"
+            android:text="Question6"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button4"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="392dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="Submit"
+            android:text="Button"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
