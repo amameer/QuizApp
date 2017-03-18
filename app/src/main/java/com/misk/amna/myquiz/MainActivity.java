@@ -3,6 +3,7 @@ package com.misk.amna.myquiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -15,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     RadioButton Q2N;
     RadioButton Q3Y;
     RadioButton Q3N;
+    EditText Q4;
+    EditText Q5;
+    EditText Q6;
     Integer Score;
 
     @Override
@@ -28,18 +32,31 @@ public class MainActivity extends AppCompatActivity {
         Q2N = (RadioButton) findViewById(R.id.Q2N);
         Q3Y = (RadioButton) findViewById(R.id.Q3Y);
         Q3N = (RadioButton) findViewById(R.id.Q3N);
+        Q4 =(EditText) findViewById(R.id.Q4);
+        Q5 =(EditText) findViewById(R.id.Q5);
+        Q6 =(EditText) findViewById(R.id.Q6);
         Score=0;
     }
 
 
+void CalculateScore()
+{
+    if (Q1N.isChecked()) Score++;
+    if (Q2Y.isChecked()) Score++;
+    if (Q3N.isChecked()) Score++;
+    if (Q4.getText().toString().equalsIgnoreCase("London"))Score++;;
+    if (Q5.getText().toString().equalsIgnoreCase("Newton"))Score++;;
+    if (Q6.getText().toString().equalsIgnoreCase("4"))Score++;;
+
+}
 
     void Submit(View view)
     {
 
-        Q1Y.isChecked();
+        CalculateScore();
 
         TextView txt=new TextView(this);
-        txt.setText("Thank You");
+        txt.setText("Thank You Your Score is :" + Score);
 
         setContentView(txt);
     }
