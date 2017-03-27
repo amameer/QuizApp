@@ -93,11 +93,7 @@ public class MainActivity extends AppCompatActivity {
             Score += 2;
     }
 
-<<<<<<< HEAD
     public void Submit(View view) {
-=======
-    void Submit(View view) {
->>>>>>> origin/master
 
         CalculateScore();
         resultString = new String();
@@ -110,6 +106,5 @@ public class MainActivity extends AppCompatActivity {
         // reset score
         Score = 0;
     }
-
 
 }
